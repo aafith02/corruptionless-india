@@ -7,5 +7,9 @@
   },
   "peerDependencies": {
     "typescript": "^5"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.15.11",
+    "ws": "^8.18.3"
   }
 }
