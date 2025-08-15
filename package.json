@@ -1,0 +1,11 @@
+{
+  "name": "corruptionless-india",
+  "module": "node.js",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
