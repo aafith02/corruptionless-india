@@ -12,9 +12,9 @@ Features:
 
 Run example:
   bun add @libsql/client ws
-  with-env { NODE_ID: "node1" } { bun run bun-pbft-full.js --port 8001 --peers "ws://localhost:8002,ws://localhost:8003" }
-  with-env { NODE_ID: "node2" } { bun run bun-pbft-full.js --port 8002 --peers "ws://localhost:8001,ws://localhost:8003" }
-  with-env { NODE_ID: "node3" } { bun run bun-pbft-full.js --port 8003 --peers "ws://localhost:8001,ws://localhost:8002" }
+  with-env { NODE_ID: "node1" } { bun run node.js --port=8001 --peers="ws://localhost:8002,ws://localhost:8003" }
+  with-env { NODE_ID: "node2" } { bun run node.js --port=8002 --peers="ws://localhost:8001,ws://localhost:8003" }
+  with-env { NODE_ID: "node3" } { bun run node.js --port=8003 --peers="ws://localhost:8001,ws://localhost:8002" }
 
 Notes:
 - This is a teaching/demo implementation. It omits many production concerns (auth, persistence tuning, view-change robustness, replay protection, etc.).
