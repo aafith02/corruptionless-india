@@ -1,0 +1,18 @@
+{
+  "nodeId": "node-1",
+  "port": 8081,
+  "peers": ["ws://localhost:8082", "ws://localhost:8083"],
+  "httpPort": 8080,
+  "dataDir": "./data",
+  "chain": {
+    "blockTimeMs": 2000,
+    "genesis": {
+      "timestamp": 0,
+      "prevHash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "height": 0
+    }
+  },
+  "pbft": {
+    "viewTimeoutMs": 5000
+  }
+}
